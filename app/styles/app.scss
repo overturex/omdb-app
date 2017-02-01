@@ -1,0 +1,10 @@
+body{
+  //background-color: #F3E5F5;
+}
+
+@import 'movie',
+        'dropdown';
+
+input, select, .btn, .panel{
+  border-radius: 0 !important;
+}

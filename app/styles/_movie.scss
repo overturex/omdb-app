@@ -1,0 +1,55 @@
+.movie{
+  position: relative;
+  flex: 0 1 32%;
+  height: 222px;
+  background-color: #f8f8f8;
+  border: 1px solid black;
+  margin: 0 10px 10px 0;
+
+  &:nth-child(3n){
+    margin-right:0;
+  }
+
+  .movie-poster{
+
+    img{
+      width: 100%;
+      height: 220px;
+    }
+
+    &.no-image{
+      text-align: center;
+      padding-top:30px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .movie-info{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    padding:10px;
+    background: rgba(0, 0, 0, 0.5);
+    color:white;
+    font-size: 10px;
+
+    .movie-title{
+      text-transform: uppercase;
+      width: 120px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn{
+      margin-left: 10px;
+      font-size: 10px;
+      padding-top:0;
+      padding-bottom:0;
+    }
+  }
+}
